@@ -297,7 +297,7 @@ abstract class BaseObject implements ModelInterface
         }
 
         foreach ($rules['maxLength'] as $property => $length) {
-            if ($this->canGetProperty($property) && strlen($this->{$property}) > $length) {
+            if ($this->canGetProperty($property) && strlen($this->{$property} ?? '') > $length) {
                 throw new DataInvalidException([$property], get_called_class(), 'Can not get or Max length reached at : '.$length);
             }
         }
