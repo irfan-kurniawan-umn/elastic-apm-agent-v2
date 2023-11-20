@@ -1,2 +1,3 @@
 # elastic-apm-agent-v2
-PHP Agent for Elastic APM v2 API version
+
+This package used for Elastic APM Agent https://github.com/irfan-kurniawan-umn/yii2-elastic-apm
