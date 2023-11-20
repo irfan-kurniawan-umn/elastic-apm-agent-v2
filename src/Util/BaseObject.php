@@ -330,9 +330,9 @@ abstract class BaseObject implements ModelInterface
 
     /**
      * @throws DataInvalidException
-     * @return array
+     * @return mixed
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $data = [];
         if ($this->validate()) {
